@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dij-ab-yvq">
+                                <rect key="frame" x="16" y="533" width="97" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="0tJ-Bc-t12"/>
+                                    <constraint firstAttribute="height" constant="46" id="yqJ-cE-Rg0"/>
+                                </constraints>
+                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="btnPreviuos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qQo-5s-oVg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hif-d0-CN5">
+                                <rect key="frame" x="262" y="533" width="97" height="46"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tX-BV-J74"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hialeah" translatesAutoresizingMaskIntoConstraints="NO" id="CHa-Fs-BIF">
+                                <rect key="frame" x="16" y="70" width="343" height="358"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1L-3M-T06" userLabel="Lbl Add">
+                                <rect key="frame" x="157" y="429" width="61.5" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="vha-ec-yHY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95094613179999998" green="0.99822545890000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-W3-md1" userLabel="Lbl Name">
+                                <rect key="frame" x="16" y="356" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vsv-k5-RvW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mdc-logo-inverse" translatesAutoresizingMaskIntoConstraints="NO" id="nIo-Mz-FyM">
+                                <rect key="frame" x="105" y="60" width="165" height="39"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.24567121326779051" green="0.64927142316809427" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LNT-W3-md1" firstAttribute="leading" secondItem="Dij-ab-yvq" secondAttribute="leading" id="4W8-kz-Hrh"/>
+                            <constraint firstItem="nIo-Mz-FyM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="8UP-O0-Rac"/>
+                            <constraint firstItem="C1L-3M-T06" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9E4-SX-Q8b"/>
+                            <constraint firstItem="hif-d0-CN5" firstAttribute="leading" secondItem="Dij-ab-yvq" secondAttribute="trailing" constant="149" id="IXm-5b-Ygo"/>
+                            <constraint firstItem="CHa-Fs-BIF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ohh-8I-GEi"/>
+                            <constraint firstItem="LNT-W3-md1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P8e-lI-K64"/>
+                            <constraint firstItem="LNT-W3-md1" firstAttribute="trailing" secondItem="hif-d0-CN5" secondAttribute="trailing" id="QXy-fE-1Yw"/>
+                            <constraint firstItem="CHa-Fs-BIF" firstAttribute="top" secondItem="nIo-Mz-FyM" secondAttribute="bottom" constant="-29" id="QlS-Vw-iDn"/>
+                            <constraint firstItem="LNT-W3-md1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sjn-NB-cTy"/>
+                            <constraint firstItem="C1L-3M-T06" firstAttribute="top" secondItem="LNT-W3-md1" secondAttribute="bottom" constant="23" id="Uq9-3p-fNH"/>
+                            <constraint firstItem="CHa-Fs-BIF" firstAttribute="trailing" secondItem="LNT-W3-md1" secondAttribute="trailing" id="VbQ-pK-nuB"/>
+                            <constraint firstItem="Dij-ab-yvq" firstAttribute="baseline" secondItem="hif-d0-CN5" secondAttribute="firstBaseline" id="WL3-PV-yN6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dij-ab-yvq" secondAttribute="bottom" constant="88" id="Yi2-AB-mBW"/>
+                            <constraint firstItem="C1L-3M-T06" firstAttribute="top" secondItem="LNT-W3-md1" secondAttribute="bottom" constant="23" id="crC-Da-ZeW"/>
+                            <constraint firstItem="LNT-W3-md1" firstAttribute="top" secondItem="CHa-Fs-BIF" secondAttribute="bottom" constant="-72" id="jyL-HJ-b8N"/>
+                            <constraint firstItem="LNT-W3-md1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lCb-KO-wYi"/>
+                            <constraint firstItem="nIo-Mz-FyM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lu7-wt-0y4"/>
+                            <constraint firstItem="Dij-ab-yvq" firstAttribute="top" secondItem="hif-d0-CN5" secondAttribute="top" id="nJ7-KS-Lz3"/>
+                            <constraint firstItem="CHa-Fs-BIF" firstAttribute="leading" secondItem="LNT-W3-md1" secondAttribute="leading" id="t5a-CR-geW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="_imgDisplay" destination="CHa-Fs-BIF" id="PNN-1P-fBG"/>
+                        <outlet property="btnNext" destination="hif-d0-CN5" id="HzT-Bj-Vy1"/>
+                        <outlet property="btnPrevious" destination="Dij-ab-yvq" id="C6M-sK-U9U"/>
+                        <outlet property="imgDisplay" destination="CHa-Fs-BIF" id="BMp-DA-VPB"/>
+                        <outlet property="lblCampusAdd" destination="C1L-3M-T06" id="6Od-H5-SSP"/>
+                        <outlet property="lblCampusName" destination="LNT-W3-md1" id="7XG-dp-MEE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hialeah" width="718" height="358"/>
+        <image name="mdc-logo-inverse" width="165" height="39"/>
+    </resources>
+</document>
